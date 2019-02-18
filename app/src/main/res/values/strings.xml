@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ScreenBase</string>
+    <string name="agreeContinue">Agree And Continue</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Principal Amount">
+
+
+                <EditText
+                    android:id="@+id/Et_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Interest Rate">
+
+
+                <EditText
+
+                    android:id="@+id/Et_interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Interest Month">
+
+
+                <EditText
+
+                    android:id="@+id/Et_interestMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/Bt_findInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_dashboard"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="click to find amount of interest"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Ll_interestCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:weightSum="2"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_weight="1.25"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:padding="10dp"
+                       android:text="Interest amount is:"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+                   <TextView
+                       android:id="@+id/Tv_interestAmount"
+                       android:layout_weight="0.75"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:padding="10dp"
+                       android:text="0.0"
+                       android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                       android:textColor="@color/Green"
+                       android:textStyle="bold" />
+
+               </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1.25"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="Total amount is:"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+                    <TextView
+                        android:layout_weight="0.75"
+                        android:id="@+id/Tv_totalAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="0.0"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/Green"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/Tv_clear"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ic_action_clear"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="CLEAR"
+                        android:textStyle="bold"
+                        android:background="@drawable/bg_edittext_icon"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
